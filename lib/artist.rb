@@ -19,8 +19,7 @@ class Artist
     Song.new(name, self, genre)
   end
   
-  def genres (name, genre)
-    Song.genre(name, self, genre)
+  def genres
+    songs.map {|song| song.genre}
   end
-  
 end
