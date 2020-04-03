@@ -22,7 +22,7 @@ class Artist
   end
   
   def genres 
-    Genre.new(name, self, genre)
+    Song.new(name, self, genre)
   end
   
 end
